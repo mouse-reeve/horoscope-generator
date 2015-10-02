@@ -1,0 +1,8 @@
+  S -> NP VP | NP
+  NP -> N | Det N | NP 'and' NP | 'mother goddess' | 'mars' | 'venus' | 'mercury' | 'saturn' | 'neptune' | 'absides' | 'aries' | 'taurus' | 'gemini' | 'cancer' | 'leo' | 'virgo' | 'libra' | 'scorpia' | 'sagittarius' | 'capricorn' | 'aquarius' | 'pisces'
+  PP -> P NP
+  VP -> 'becomes' A | 'is' A | 'communes with' NP | 'swims' PP | 'rejoices' PP | 'introspects' | 'meditates' PP | 'caresses' NP | 'abscissor' PP | 'rising' NP | 'setting' NP
+  Det -> 'the' | 'a' | 'every'
+  N -> A N | 'woman' | 'pool' | 'ocean' | 'star' | 'avocado' | 'sister' | 'kimono' | 'downward dog' | 'winds' | 'mother' | 'light' | 'sun' | 'moon' | 'eclipse'
+  P -> 'in' | 'with' | 'among' | 'amidst' | 'of'
+  A -> A A | A N | 'sacred' | 'luminous' | 'celestial' | 'earthen' | 'crystal' | 'cool' | 'tempestuous' | 'liminal' | 'blood' | 'solar' | 'lunar' | 'synchronous' | 'aetheric'

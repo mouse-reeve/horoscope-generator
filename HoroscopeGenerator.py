@@ -2,6 +2,7 @@
 from nltk.grammar import Nonterminal
 from nltk import CFG
 import random
+import re
 
 grammar = CFG.fromstring(open('grammar.txt').read())
 
@@ -24,5 +25,13 @@ def get_sentence(start=None, depth=7):
     else:
         return [start]
 
-for i in range(10):
-    print ' '.join(get_sentence(depth=10))
+def format(sentence):
+    for index, word in enumerate(sentence):
+        if word == 'a' and index + 1 < len(sentence) and re.match(r'^[aeiou]', sentence[index + 1]):
+            sentence[index] = 'an'
+    text = ' '.join(sentence)
+    text = text.replace(' ,', ',')
+    return text
+
+for i in range(20):
+    print(format(get_sentence(depth=10)))

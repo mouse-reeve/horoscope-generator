@@ -1,8 +1,9 @@
-  S -> NP VP | NP
-  NP -> N | Det N | NP 'and' NP | 'mother goddess' | 'mars' | 'venus' | 'mercury' | 'saturn' | 'neptune' | 'absides' | 'aries' | 'taurus' | 'gemini' | 'cancer' | 'leo' | 'virgo' | 'libra' | 'scorpia' | 'sagittarius' | 'capricorn' | 'aquarius' | 'pisces'
+  S -> NP VP
+  NP -> N | Det N | NP 'and' NP | 'mother goddess' | 'mars' | 'venus' | 'mercury' | 'saturn' | 'neptune' | 'absides' | 'aries' | 'taurus' | 'gemini' | 'cancer' | 'leo' | 'virgo' | 'libra' | 'scorpio' | 'sagittarius' | 'capricorn' | 'aquarius' | 'pisces' | 'gaia'
   PP -> P NP
-  VP -> 'becomes' A | 'is' A | 'communes with' NP | 'swims' PP | 'rejoices' PP | 'introspects' | 'meditates' PP | 'caresses' NP | 'abscissor' PP | 'rising' NP | 'setting' NP
+  VP -> AV VP | 'becomes' A | 'is' A | 'communes with' NP | 'swims' PP | 'rejoices' PP | 'introspects' | 'meditates' PP | 'caresses' NP | 'rising' NP | 'setting' NP | 'cleanses' NP | 'soaks'
   Det -> 'the' | 'a' | 'every'
-  N -> A N | 'woman' | 'pool' | 'ocean' | 'star' | 'avocado' | 'sister' | 'kimono' | 'downward dog' | 'winds' | 'mother' | 'light' | 'sun' | 'moon' | 'eclipse'
+  N -> A N | 'woman' | 'pool' | 'ocean' | 'star' | 'avocado' | 'sister' | 'kimono' | 'downward dog' | 'winds' | 'mother' | 'light' | 'sun' | 'moon' | 'eclipse' | 'lotus' | 'tides' | 'stardust' | 'aura' | 'cosmos' | 'owl' | 'haze'
   P -> 'in' | 'with' | 'among' | 'amidst' | 'of'
-  A -> A A | A N | 'sacred' | 'luminous' | 'celestial' | 'earthen' | 'crystal' | 'cool' | 'tempestuous' | 'liminal' | 'blood' | 'solar' | 'lunar' | 'synchronous' | 'aetheric'
+  A -> A A | A N | 'sacred' | 'luminous' | 'celestial' | 'earthen' | 'crystal' | 'cool' | 'tempestuous' | 'liminal' | 'blood' | 'solar' | 'lunar' | 'synchronous' | 'aetheric' | 'glowing' | 'vibrating' | 'elemental' | 'turbulent'
+  AV -> 'peacefully' | 'gently' | 'powerfully'

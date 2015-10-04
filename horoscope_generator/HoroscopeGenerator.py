@@ -2,13 +2,16 @@
 import logging
 from nltk.grammar import Nonterminal
 from nltk import CFG
+from os import path
 import random
 import re
 
+HERE = path.abspath(path.dirname(__file__))
+
 try:
-    GRAMMAR = CFG.fromstring(open('data/grammar.txt').read())
+    GRAMMAR = CFG.fromstring(open('%s/data/grammar.txt' % HERE).read())
 except IOError:
-    logging.error('Unable to load GRAMMAR')
+    logging.error('Unable to load grammar file')
     raise IOError
 
 def get_sentence(start=None, depth=7):

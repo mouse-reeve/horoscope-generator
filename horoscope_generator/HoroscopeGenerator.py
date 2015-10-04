@@ -4,7 +4,7 @@ from nltk import CFG
 import random
 import re
 
-grammar = CFG.fromstring(open('grammar.txt').read())
+grammar = CFG.fromstring(open('data/grammar.txt').read())
 
 def get_sentence(start=None, depth=7):
     start = start if start else grammar.start()
@@ -33,5 +33,3 @@ def format(sentence):
     text = text.replace(' ,', ',')
     return text
 
-for i in range(20):
-    print(format(get_sentence(depth=10)))

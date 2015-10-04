@@ -1,10 +1,10 @@
-  S -> NP VP | C NP VP 'then' NP VP | PP ',' NP VP | S 'and' VP
-  C -> 'if' | 'when' | 'should'
+  S -> 'you will be blessed with' Det N PP | 'watch out for' NP PP | NP VP | C NP VP 'then' NP VP | PP ',' NP VP | S 'and' VP
+  C -> 'if' | 'when' | 'for'
   NP -> N | Det N | NP 'and' NP | 'mother goddess' | 'mars' | 'venus' | 'mercury' | 'saturn' | 'neptune' | 'absides' | 'aries' | 'taurus' | 'gemini' | 'cancer' | 'leo' | 'virgo' | 'libra' | 'scorpio' | 'sagittarius' | 'capricorn' | 'aquarius' | 'pisces' | 'gaia' | 'community' | 'motherhood' | 'sisterhood' | 'buddha' | 'ganesha' | 'karma' | 'nirvana' | 'happiness'
   PP -> P NP
   VP -> AV VP | 'becomes' A | 'is' A | 'communes' PP | 'swims' PP | 'rejoices' PP | 'introspects' | 'meditates' PP | 'caresses' NP | 'cleanses' NP | 'soaks' PP | 'crosses' NP | 'finds' NP | 'traces' NP | 'runs' PP | 'walks' PP | 'triumphs' PP | 'reads' NP | 'understands' NP | 'dives' PP | 'reveals' NP | 'connects' PP | 'illuminates' NP | 'floats' PP | 'sets' PP | 'lifts' NP
   Det -> 'the' | 'a' | 'every'
-  N -> A N | 'woman' | 'pool' | 'ocean' | 'star' | 'avocado' | 'yogurt' | 'acai' | 'quinoa' | 'coconut' | 'sister' | 'kimono' | 'downward dog' | 'winds' | 'mother' | 'light' | 'sun' | 'moon' | 'eclipse' | 'lotus' | 'tides' | 'stardust' | 'aura' | 'cosmos' | 'owl' | 'haze' | 'stranger' | 'avatar' | 'soul'
+  N -> A N | 'woman' | 'pool' | 'ocean' | 'star' | 'avocado' | 'yogurt' | 'acai' | 'quinoa' | 'coconut' | 'sister' | 'kimono' | 'downward dog' | 'wind' | 'mother' | 'light' | 'sun' | 'moon' | 'eclipse' | 'lotus' | 'tides' | 'stardust' | 'aura' | 'cosmos' | 'owl' | 'haze' | 'stranger' | 'avatar' | 'soul'
   P -> 'in' | 'with' | 'among' | 'amidst' | 'without'
   A -> A A | A N | 'sacred' | 'luminous' | 'celestial' | 'earthen' | 'crystal' | 'cool' | 'tempestuous' | 'liminal' | 'blood' | 'solar' | 'lunar' | 'synchronous' | 'aetheric' | 'glowing' | 'vibrating' | 'elemental' | 'turbulent' | 'setting' | 'rising' | 'beautiful' | 'mysterious' | 'open' | 'retrograde'
   AV -> 'peacefully' | 'gently' | 'powerfully'

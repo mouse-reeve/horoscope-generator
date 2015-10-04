@@ -1,16 +1,25 @@
 ''' Generate horoscopes '''
+import logging
 from nltk.grammar import Nonterminal
 from nltk import CFG
 import random
 import re
 
-grammar = CFG.fromstring(open('data/grammar.txt').read())
+try:
+    GRAMMAR = CFG.fromstring(open('data/grammar.txt').read())
+except IOError:
+    logging.error('Unable to load GRAMMAR')
+    raise IOError
 
 def get_sentence(start=None, depth=7):
-    start = start if start else grammar.start()
+    ''' follow the grammatical patterns to generate a random sentence '''
+    if not GRAMMAR:
+        return 'Please set a GRAMMAR file'
+
+    start = start if start else GRAMMAR.start()
 
     if isinstance(start, Nonterminal):
-        productions = grammar.productions(start)
+        productions = GRAMMAR.productions(start)
         if not depth:
             # time to break the cycle
             terminals = [p for p in productions if not isinstance(start, Nonterminal)]
@@ -25,11 +34,11 @@ def get_sentence(start=None, depth=7):
     else:
         return [start]
 
-def format(sentence):
+def format_sentence(sentence):
+    ''' fix display formatting of a sentence array '''
     for index, word in enumerate(sentence):
         if word == 'a' and index + 1 < len(sentence) and re.match(r'^[aeiou]', sentence[index + 1]):
             sentence[index] = 'an'
     text = ' '.join(sentence)
     text = text.replace(' ,', ',')
     return text
-

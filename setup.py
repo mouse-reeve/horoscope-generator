@@ -10,7 +10,7 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 
 setup(
     name='HoroscopeGenerator',
-    version='0.1.2',
+    version='0.1.4',
 
     description='Generates horoscopes',
     long_description=long_description,

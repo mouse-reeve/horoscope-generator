@@ -40,8 +40,11 @@ def get_sentence(start=None, depth=7):
 def format_sentence(sentence):
     ''' fix display formatting of a sentence array '''
     for index, word in enumerate(sentence):
-        if word == 'a' and index + 1 < len(sentence) and re.match(r'^[aeiou]', sentence[index + 1]):
+        if word == 'a' and index + 1 < len(sentence) and \
+                re.match(r'^[aeiou]', sentence[index + 1]) and not \
+                re.match(r'^uni', sentence[index + 1]):
             sentence[index] = 'an'
     text = ' '.join(sentence)
+    text = '%s%s' % (text[0].upper(), text[1:])
     text = text.replace(' ,', ',')
-    return text
+    return '%s.' % text

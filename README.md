@@ -7,7 +7,7 @@ To use:
 `pip install HoroscopeGenerator`
 
 for example:
-```
+```python
 from horoscope_generator import HoroscopeGenerator
 print(HoroscopeGenerator.format_sentence(HoroscopeGenerator.get_sentence()))
 ```
